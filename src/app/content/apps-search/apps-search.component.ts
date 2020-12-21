@@ -12,6 +12,7 @@ export class AppsSearchComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
 }
 
 @Component({

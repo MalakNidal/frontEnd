@@ -23,21 +23,10 @@
                 </form>
 
                 <div class="list">
-                    <div class="index"></div>
-                    <div class="index"></div>
-                    <div class="index"></div>
-                    <div class="index"></div>
-                    <div class="index"></div>
-                    <div class="index"></div>
-                    <div class="index"></div>
-                    <div class="index"></div>
-                    <div class="index"></div>
-                    <div class="index"></div>
-                    <div class="index"></div>
-                    <div class="index"></div>
+                   <div class="list-item" style="color: aliceblue;" *ngFor="let app of apps">{{app.id}} || {{app.appName}}</div>
                 </div>
-                
-                <h4>Are you looking for predict your app rate?                
+
+                <h4>Are you looking for predict your app rate?
                 <a routerLink="/getRate"><button class="button2">Get rate</button></a>
                 </h4>
             </div>

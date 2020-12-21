@@ -12,6 +12,7 @@ import { AppsPredictionComponent } from './content/apps-prediction/apps-predicti
 import { ShowAppsComponent } from './content/show-apps/show-apps.component';
 import { PredictionRateComponent } from './content/prediction-rate/prediction-rate.component';
 
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,9 +28,11 @@ import { PredictionRateComponent } from './content/prediction-rate/prediction-ra
     RouterModule.forRoot([
       { path: 'getRate', component: AppsPredictionComponent },
       { path: 'search', component: AppsSearchComponent},
-      { path: 'showApps', component: ShowAppsComponent}, 
+      { path: 'showApps', component: ShowAppsComponent},
       { path: 'showPredict', component: PredictionRateComponent}
-    ])
+    ]),
+    HttpClientModule
+
   ],
 
   providers: [],

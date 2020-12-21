@@ -1,0 +1,10 @@
+[
+  { "id": "1", "appName": "Instagram" },
+  { "id": "2", "appName": "Gmail" },
+  { "id": "3", "appName": "Yahoo" },
+  { "id": "4", "appName": "Whatsapp" },
+  { "id": "5", "appName": "Facebook" },
+  { "id": "6", "appName": "Messanger" },
+  { "id": "7", "appName": "Yummly" },
+  { "id": "8", "appName": "Snacpchat" }
+]
