@@ -1,37 +1,28 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            You Predict
-        </title>
-        <link rel="stylesheet" href="apps-search.component.css">
-    </head>
+<div class="main-container">
+  <div class="logo">
+    <img src="assets/img/logo1.png" alt="logo" class="logo" />
+  </div>
+  <div class="inner-container">
+    <h3>This service provided to everyone</h3>
+    <p>
+      Just enter the name of the application you are looking for, and you will
+      get a list of the best apps ranked by the highest rating
+    </p>
 
-    <body>
-        <br><br>
-        <div class="container1">
-            <div class="logo">
-                <img src="assets/img/logo1.png" alt="logo" class="logo">
-            </div>
-            <br><br><br>
-            <div class="container2">
-                <h3>This service provided to everyone</h3>
-                <p>Just enter the name of the application you are looking for,
-                and you will get a list of the best apps ranked by the highest rating</p>
-                <br>
-
-                <form action="./showApps" method="POST">
-                <input type="text" placeholder="App name" name="search" class="oval" required>
-                <br><br>
-                <a routerLink="/showApps"><button class="button">Search</button></a>
-                </form>
-                
-
-                <br><br><br><br><br>
-                <h4>Are you looking for predict your app rate?                
-                <a routerLink="/getRate"><button class="button2">Get rate</button></a>
-                </h4>
-            </div>
-        </div>
-    </body>
-</html>
+    <form action="./showApps" method="POST">
+      <input
+        type="text"
+        placeholder="App name"
+        name="search"
+        class="oval"
+        required
+      />
+      <br /><br />
+      <a routerLink="/showApps"><button class="button">Search</button></a>
+    </form>
+    <h4>
+      Are you looking for predict your app rate?
+      <a routerLink="/getRate"><button class="button2">Get rate</button></a>
+    </h4>
+  </div>
+</div>
