@@ -25,11 +25,12 @@
                 </form>
                 <br><br><br>
 
-                <div class="rate">
-                    <h3>Your prediction rate is</h3>
-                    <p>4</p>
+                <div class="rate" *ngFor="let rate of Rate">
+                    <h3>Your app prediction rate is</h3>
+                    <p></p>
                 </div>
 
+                <br>
                 <h4>Are you looking for app? with high rate?                
                 <a routerLink="/search"><button class="button2">Search</button></a>
                 </h4>

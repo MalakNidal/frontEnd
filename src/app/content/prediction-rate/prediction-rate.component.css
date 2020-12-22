@@ -164,7 +164,7 @@ body
     background-image: url("./rate.png");
     height: 100px;
     width: 250px;
-    position: relative; left: 175px; top: -30px;
+    position: relative; left: 168px; top: -30px;
     background-size: cover;
     border-radius: 4px;
 }
@@ -195,5 +195,5 @@ p
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     font-family: Arial, Helvetica, sans-serif;
-    position: relative; top: -45px; left: 20px;
+    position: relative; top: 0px; left: 20px;
 }

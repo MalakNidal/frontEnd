@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { HttpService } from 'src/app/services/http.service';
 
 @Component({
   selector: 'app-prediction-rate',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PredictionRateComponent implements OnInit {
 
-  constructor() { }
+  Rate: any;
+
+  constructor(private httpserive: HttpService) { }
 
   ngOnInit(): void {
+    this.getrate();
+  }
+
+  private getrate(){
+    this.httpserive.getRate().subscribe(res => this.Rate = res)
   }
 
 }

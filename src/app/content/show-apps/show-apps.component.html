@@ -8,13 +8,14 @@
     </head>
 
     <body>
-        <br><br>
+        <br><br><br>
         <div class="container1">
             <div class="logo1">
                 <img src="assets/img/logo1.png" alt="logo" class="logo1" height="100px" width="100px">
             </div>
             <div class="container2">
 
+                <br>
                 <form>
                 <h2>
                 <input type="text" placeholder="App name" name="search" class="oval3" required>
@@ -22,8 +23,11 @@
                 </h2>
                 </form>
 
+                <br>
                 <div class="list">
-                   <div class="list-item" style="color: aliceblue;" *ngFor="let app of apps">{{app.id}} || {{app.appName}}</div>
+                   <div class="index" *ngFor="let app of apps">
+                    {{app.id}} || {{app.appName}}
+                   </div>
                 </div>
 
                 <h4>Are you looking for predict your app rate?

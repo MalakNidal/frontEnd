@@ -10,6 +10,11 @@ export class HttpService {
 
   // get apps by search key
   public getApss(appname: string = ""){
-    return this.http.get('../assets/data/apss.json')
+    return this.http.get('')
+  }
+
+  // get prediction rate
+  public getRate(appsname: string = "", appdescription: string = ""){
+    return this.http.get('../assets/data/predict.json')
   }
 }
