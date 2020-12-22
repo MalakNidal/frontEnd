@@ -21,13 +21,13 @@
                 <input type="text" placeholder="Enter the description of app" class="oval2" required>
 
                 <br><br>
-                <button class="button" ng-click="rateFunction()">Get rate</button>
+                <button class="button">Get rate</button>
                 </form>
                 <br><br><br>
 
                 <div class="rate" *ngFor="let rate of Rate">
                     <h3>Your app prediction rate is</h3>
-                    <p></p>
+                    <p>{{rate.appRate}}</p>
                 </div>
 
                 <br>

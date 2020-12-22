@@ -15,6 +15,6 @@ export class HttpService {
 
   // get prediction rate
   public getRate(appsname: string = "", appdescription: string = ""){
-    return this.http.get('../assets/data/predict.json')
+    return this.http.get('../assets/data/rate.json')
   }
 }
